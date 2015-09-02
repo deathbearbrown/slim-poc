@@ -1,7 +1,7 @@
 ---
-- name: Copy over src
+- name: Copy over public
   copy:
-    src='../src'
+    src='../public'
     dest={{root}}
   tags: copy
 
@@ -14,6 +14,12 @@
 - name: Copy over the migrationscode
   copy:
     src='../migrations'
+    dest={{root}}
+  tags: copy
+
+- name: Copy over the app
+  copy:
+    src='../app'
     dest={{root}}
   tags: copy
 

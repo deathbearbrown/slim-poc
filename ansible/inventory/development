@@ -1,10 +1,10 @@
-vagrant ansible_ssh_host=192.168.13.71 ansible_ssh_user=vagrant
+vagrant ansible_ssh_host=192.168.13.65 ansible_ssh_user=vagrant
 [appserver]
 vagrant
 
 [appserver:vars]
 root=/mnt
-api_root=/mnt/src
+api_root=/mnt/public
 serverName=auth.dev
 migrationType=development
 mysqlRootPass=12345

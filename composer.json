@@ -1,6 +1,14 @@
 {
     "require": {
-        "slim/slim": "*",
-        "illuminate/database": "*"
+			"slim/slim": "*",
+			"illuminate/database": "*",
+			"mandrill/mandrill": "1.0.*",
+			"phpunit/dbunit": ">=1.2",
+			"robmorgan/phinx": "*",
+			"guzzlehttp/guzzle": "5.3",
+			"phpunit/dbunit": ">=1.2",
+			"filp/whoops": "1.*",
+			"squizlabs/php_codesniffer": "2.*",
+			"bshaffer/oauth2-server-php": "~1.7"
     }
 }
