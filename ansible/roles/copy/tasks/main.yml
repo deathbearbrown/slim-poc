@@ -1,0 +1,31 @@
+---
+- name: Copy over src
+  copy:
+    src='../src'
+    dest={{root}}
+  tags: copy
+
+- name: Copy over the config folder
+  copy:
+    src='../config'
+    dest={{root}}
+  tags: copy
+
+- name: Copy over the migrationscode
+  copy:
+    src='../migrations'
+    dest={{root}}
+  tags: copy
+
+- name: Copy over phinx config
+  copy:
+    src='../phinx.yml'
+    dest={{root}}
+  tags: copy
+
+- name: Copy over composer file
+  copy:
+    src='../composer.json'
+    dest={{root}}
+  tags: copy
+

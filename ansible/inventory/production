@@ -1,0 +1,11 @@
+ubuntu ansible_ssh_host=52.24.126.113 ansible_ssh_user=ubuntu
+[appserver]
+ubuntu
+
+[appserver:vars]
+root=/mnt
+copy=/mnt
+api_root=/mnt/src
+serverName=ec2-52-24-126-113.us-west-2.compute.amazonaws.com
+migrationType=production
+mysqlRootPass=12345

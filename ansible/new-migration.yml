@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: yes
+  gather_facts: false
+  tasks:
+
+  - name: Create new migration
+    shell: cd {{root}} && php {{root}}/vendor/bin/phinx create {{name}}

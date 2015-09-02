@@ -1,0 +1,4 @@
+---
+- name: Run all migrations
+  shell: cd {{root}} && php {{root}}/vendor/bin/phinx migrate -e {{migrationType}}
+
