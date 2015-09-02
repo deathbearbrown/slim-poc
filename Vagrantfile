@@ -17,4 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.inventory_path = "ansible/inventory/development"
     ansible.playbook = "ansible/provision.yml"
   end
+  config.vm.provider :virtualbox do |v|
+	  v.customize ["modifyvm", :id, "--memory", 1024]
+	end
 end

@@ -24,3 +24,9 @@
     - python-software-properties
   notify: restart php5-fpm
   tags: php5-fpm
+
+- name: Copy over PHP.ini
+  template:
+    src=00-php.ini
+    dest=/etc/php5/fpm/conf.d
+  notify: restart php5-fpm
