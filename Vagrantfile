@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
   config.ssh.insert_key = false
   config.hostsupdater.aliases = [
-    "auth.dev"
+    "poc.dev"
   ]
   config.vm.provision "ansible" do |ansible|
     ansible.limit = "vagrant"

@@ -18,7 +18,7 @@
   template: src=nginx-common.conf dest=/etc/nginx/nginx-common.conf
   tags: nginx
 
-- name: Setup the auth.dev configuration for nginx
+- name: Setup the poc.dev configuration for nginx
   template: src=auth.conf dest=/etc/nginx/conf.d/auth.conf
   notify: restart nginx
   tags: nginx

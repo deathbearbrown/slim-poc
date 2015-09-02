@@ -6,6 +6,6 @@ auth.dev
 [appserver:vars]
 root={{ lookup('env', 'TRAVIS_BUILD_DIR') }}
 api_root={{ lookup('env', 'TRAVIS_BUILD_DIR') }}/src
-serverName=auth.dev
+serverName=poc.dev
 migrationType=testing
 mysqlRootPass=12345

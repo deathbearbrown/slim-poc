@@ -5,6 +5,6 @@ vagrant
 [appserver:vars]
 root=/mnt
 api_root=/mnt/public
-serverName=auth.dev
+serverName=poc.dev
 migrationType=development
 mysqlRootPass=12345
